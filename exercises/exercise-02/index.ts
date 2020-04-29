@@ -67,7 +67,7 @@ function logPerson(person: Person) {
   let additionalInformation: string;
   const admin = person as Admin;
   const user = person as User;
-  if (admin) {
+  if (admin.role) {
     additionalInformation = admin.role;
   } else {
     additionalInformation = user.occupation;
